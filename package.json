@@ -1,6 +1,6 @@
 {
   "name": "urdin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A simple library to translate Urdu text into Roman Urdu.",
   "author": "Muhammad Hassan Raza",
   "license": "MIT",
@@ -18,7 +18,7 @@
   "files": [
     "dist"
   ],
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/hasanraza38/urdin.git"
   },

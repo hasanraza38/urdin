@@ -1,6 +1,6 @@
 import { expect, test } from "vitest";
-import { transliterate } from "../src/index";
+import { translate } from "../src/index";
 
 test("basic urdu to roman", () => {
-  expect(transliterate("میرا نام حسن ہے")).toBe("mera nam hasan hai");
+  expect(translate("میرا نام حسن ہے")).toBe("mera nam hasan hai");
 });
