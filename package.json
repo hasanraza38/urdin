@@ -1,18 +1,37 @@
 {
-  "name": "urdu-to-roman",
+  "name": "urdin",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A simple library to translate Urdu text into Roman Urdu.",
+  "author": "Muhammad Hassan Raza",
+  "license": "MIT",
+  "keywords": [
+    "urdu",
+    "roman-urdu",
+    "transliteration",
+    "language",
+    "text"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/hasanraza38/urdin.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "build": "tsc && esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js && esbuild src/index.ts --bundle --platform=node --format=cjs --outfile=dist/index.cjs",
+    "test": "vitest",
+    "prepare": "npm run build"
+  },
   "devDependencies": {
     "@types/node": "^24.3.1",
     "esbuild": "^0.25.9",
     "typescript": "^5.9.2",
+    "undici-types": "^7.15.0",
     "vitest": "^3.2.4"
   }
 }
